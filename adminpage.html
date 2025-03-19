@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page | Fhaund It</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .container {
+            width: 60%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #d2e0d1;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .item img {
+            width: 80px;
+            height: 80px;
+            background-color: #ccc;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+        .details {
+            flex: 1;
+            margin-left: 10px;
+            text-align: left;
+            background: #f0eae4;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .details label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .details input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            background-color: #fff;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        .details input:focus {
+            border-color: #97B3AE;
+            box-shadow: 0px 0px 5px rgba(151, 179, 174, 0.5);
+            outline: none;
+        }
+    
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .buttons button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        img{
+            width: 350px;
+            height: 100px;;
+            border-radius: 5px;
+
+        }
+
+        .upload { background-color: #97B3AE; color: black; font-weight: bold; }
+        .found { background-color: #97B3AE; color: black; font-weight: bold; }
+        .delete { background-color: #97B3AE; color: black; font-weight: bold; }
+        
+        footer {
+            background-color: #f8f8f8;
+            padding: 15px 20px;
+            border-top: 2px solid #000;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            
+        }
+
+        .footer-logo img {
+            width: 130px;
+            height: 50px; 
+        }
+
+        .footer-text {
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+            flex: 1; 
+        }
+
+        .footer-right {
+            text-align: right;
+            font-size: 14px;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <img src="images/logo.png">
+      
+        <div class="item">
+            <img src="placeholder.png" alt="Lost Item">
+            <div class="details">
+      
+                <label for="name"><strong>Item Name:</strong></label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="description"><strong>Item Description:</strong></label>
+                <input type="text" id="description" name="description" required><br>
+
+                <label for="dateFound"><strong>Date Found:</strong></label>
+                <input type="date" id="dateFound" name="dateFound" required><br>
+
+                <label for="location"><strong>Location Found:</strong></label>
+                <input type="text" id="location" name="location" required><br>
+
+                <label for="Status"><strong>Status:</strong></label>
+                <input type="text" id="status" name="status" required><br>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="placeholder.png" alt="Lost Item">
+            <div class="details">
+      
+                <label for="name"><strong>Item Name:</strong></label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="description"><strong>Item Description:</strong></label>
+                <input type="text" id="description" name="description" required><br>
+
+                <label for="dateFound"><strong>Date Found:</strong></label>
+                <input type="date" id="dateFound" name="dateFound" required><br>
+
+                <label for="location"><strong>Location Found:</strong></label>
+                <input type="text" id="location" name="location" required><br>
+
+                <label for="Status"><strong>Status:</strong></label>
+                <input type="text" id="status" name="status" required><br>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="placeholder.png" alt="Lost Item">
+            <div class="details">
+      
+                <label for="name"><strong>Item Name:</strong></label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="description"><strong>Item Description:</strong></label>
+                <input type="text" id="description" name="description" required><br>
+
+                <label for="dateFound"><strong>Date Found:</strong></label>
+                <input type="date" id="dateFound" name="dateFound" required><br>
+
+                <label for="location"><strong>Location Found:</strong></label>
+                <input type="text" id="location" name="location" required><br>
+
+                <label for="Status"><strong>Status:</strong></label>
+                <input type="text" id="status" name="status" required><br>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="placeholder.png" alt="Lost Item">
+            <div class="details">
+      
+                <label for="name"><strong>Item Name:</strong></label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="description"><strong>Item Description:</strong></label>
+                <input type="text" id="description" name="description" required><br>
+
+                <label for="dateFound"><strong>Date Found:</strong></label>
+                <input type="date" id="dateFound" name="dateFound" required><br>
+
+                <label for="location"><strong>Location Found:</strong></label>
+                <input type="text" id="location" name="location" required><br>
+
+                <label for="Status"><strong>Status:</strong></label>
+                <input type="text" id="status" name="status" required><br>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="placeholder.png" alt="Lost Item">
+            <div class="details">
+      
+                <label for="name"><strong>Item Name:</strong></label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="description"><strong>Item Description:</strong></label>
+                <input type="text" id="description" name="description" required><br>
+
+                <label for="dateFound"><strong>Date Found:</strong></label>
+                <input type="date" id="dateFound" name="dateFound" required><br>
+
+                <label for="location"><strong>Location Found:</strong></label>
+                <input type="text" id="location" name="location" required><br>
+
+                <label for="Status"><strong>Status:</strong></label>
+                <input type="text" id="status" name="status" required><br>
+            </div>
+        </div>
+
+
+        <div class="buttons">
+            <button class="upload" onclick="uploadFunction()">Upload</button>
+            <button class="found" onclick="markAsFound()">Mark as Found</button>
+            <button class="delete" onclick="deleteItem()">Delete</button>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="FhaundIT Logo">
+                </div>
+                <div class="footer-text">
+                    <p>In collaboration with HAU Campus Services Office</p>
+                    <p><a href="https://hau.edu.ph">hau.edu.ph</a></p>
+                    <p>#123 Holy Angel St, Angeles, 2009 Pampanga, Philippines</p>
+                </div>
+                <div class="footer-right">
+                    <p>©2025 WD-302</p>
+                    <p>All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        
+        
+    </div>
+
+    <script>
+        function uploadFunction() {
+            alert("Upload button clicked!");
+        }
+    
+        function markAsFound() {
+            alert("Marked as Found!");
+           
+        }
+    
+        function deleteItem() {
+            if (confirm("Are you sure you want to delete this item?")) {
+                alert("Item deleted!");
+        }
+    }
+    </script>
+
+</body>
+</html>
